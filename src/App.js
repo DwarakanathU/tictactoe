@@ -1,18 +1,13 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import Game from "./components/Game/Game";
+import History from "./components/History/History";
 
 function App() {
   const title = "Tic Tac Toe";
   return (
     <div className="container">
-      <section>
-        <Header title={title} />
-        <main>Playing table</main>
-        <section>buttons</section>
-      </section>
-      <section>
-        <main>History</main>
-      </section>
+      <Game title={title} />
+      <History />
     </div>
   );
 }
